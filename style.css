@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family:"General Sans Medium";
+   
+}
+/* @font-face {
+    font-family: fff;
+    src: url();
+} */
+html,body{
+    height: 100%;
+    width: 100%;
+    /* padding: 0 10vh; */
+}
+#main{
+    background-color: #000000;
+    /* height: auto; */
+    width: 100%;
+    padding: 0 1vh;
+    overflow: hidden;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.spl-text{
+    position: relative;
+    overflow: hidden;
+}
+.spl-text::after{
+ content: "";
+ position: absolute;
+bottom: 0%;
+left: -100%;
+/* display: none; */
+ height: .4vh;
+ width: 100%;
+ z-index: 99999;
+ background-color:white;
+}
+.spl-text:hover::after{
+    /* background-color: white; */
+    left: 100%;
+    transition: all ease .7s ;
+    /* display: block; */
+}
+
+
+#honors{
+    height: 30vh;
+    width: 2vw;
+    background-color: #ffff;
+    position: absolute;top: 30%;
+    right: 0;
+    position: fixed;
+}
+#honors h4{
+    font-size: 22px;
+}
+#hon{
+ writing-mode:vertical-rl; /* Sets writing mode to vertical */
+  text-orientation: mixed;   /* Allows vertical text */
+  white-space: nowrap; 
+  font-size: 21px;
+}
+
+#follower{
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background-color: white;
+    mix-blend-mode: difference;
+    position: absolute;
+    transition: all linear .1s;
+    left: 40%;top: 40%;
+}
+#nav{
+    height: 15vh;
+    width: 99%;
+    background-color: #00000008;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 0 3vh;
+
+}
+
+#nav h3{
+    font-size: 21px;
+    color: #ffff;
+}
+#page-1{
+    min-height: 100vh;
+    width: 97vw;
+    background-color: #000000;
+}
+
+#page-1 #page-1-mid{
+    padding: 15% 5% 6% 5%;
+    min-height: 30vh;
+    width: 70vw;
+    background-color: transparent;
+    text-align: end;
+    display: inline-block;
+}
+#shifted-1{
+    padding-right: 12vw;
+}
+#page-1 #page-1-mid h4{ 
+    color: white;
+}
+#page-1 #page-1-mid h1{
+    font-size: 134.441px;
+    line-height: 111.256px;
+    font-weight: 500;
+    color: #A3A3A3;
+   padding-top: 5vh;
+    
+}
+
+#page-1-footer{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page-1-footer h4{
+    color: white;
+    padding-bottom: 2vh;
+}
+
+.footer-child3{
+    text-align: end;
+    padding-bottom: 18vh;
+    color: white;
+   
+
+}
+
+#page-2{
+    /* overflow: hidden; */
+    background-color: #000000;
+    color: white;
+    
+
+}
+.animg img{
+    position: absolute;
+    height: 40vh;
+    display: none;
+    rotate:'';
+    /* z-index: 999; */
+    transition: all linear .1s;
+    scale: 0;
+}
+.animg h1{
+    font-size: 19vh;
+    
+}
+.animg:hover h1{
+    transition: all ease .7s;
+    color: #a3a3a384;
+    left: 1%;
+    
+}
+.animg:hover img{
+    transition: all linear .1s;
+    scale: 1;
+    left: 45%;
+    rotate: 0deg;
+    top: 0%;
+}
+.animg{
+    /* padding: 6vh; */
+    /* height: 10vh; */
+    display: flex;align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    border-top: 1px solid #A3A3A3;
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+    padding: 10vh 6vh;
+    color: white;
+}
+#bbreq{
+    border-bottom: 1px solid #A3A3A3;
+}
+
+#page-3{
+    background-color: #000000;
+    /* height: min-content; */
+ 
+}
+#center{
+    height: 100vh;
+    width: 100vw;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 10vw;
+}
+#center img{
+    
+    height: 60vh;
+    width: 60vh;
+    border-radius: 50%;
+}
+
+#center #textOfCenter button{
+padding: 10px 25px;
+font-size: 19px;
+border-radius: 8px;
+border-radius: 10px;
+color: black;
+/* color: white; */
+border: none;
+
+}
+#center #textOfCenter h5{
+    width: 30vw;
+    font-size: 18px;
+    color: white;
+
+}
+
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+#strt,#end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    color: white;
+
+}
+#page-3 h3,#page-3 h4{
+    color: white;
+
+}
